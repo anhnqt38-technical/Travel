@@ -1,0 +1,149 @@
+:root {
+    --footer-bg: #38636b;
+    --footer-text: #f3f7f5;
+    --footer-muted: #c5d6d2;
+    --footer-accent: #f4a261;
+    --footer-divider: rgba(243, 247, 245, 0.2);
+}
+
+/* Footer */
+
+footer {
+    width: 100%;
+    background: var(--footer-bg);
+    color: var(--footer-text);
+    font-family: Arial, sans-serif;
+}
+
+.foo_container {
+    max-width: 1260px;
+    margin: 0 auto;
+    padding: 40px 30px 44px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 35px;
+}
+
+.img_logo {
+    flex: 1;
+}
+
+.img_logo img {
+    width: 160px;
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+    background: transparent;
+}
+
+.info {
+    flex: 1.5;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.contact {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.contact img {
+    width: 22px;
+    height: 22px;
+    object-fit: contain;
+    flex-shrink: 0;
+    filter: brightness(0) invert(1);
+}
+
+.contact p {
+    margin: 0;
+    color: var(--footer-text);
+    font-size: 14px;
+    line-height: 1.6;
+    overflow-wrap: anywhere;
+}
+
+.element {
+    flex: 0.7;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    padding-top: 4px;
+}
+
+.element a {
+    color: var(--footer-text);
+    text-decoration: none;
+    font-size: 15px;
+    transition: color 0.3s ease;
+}
+
+.element a:hover {
+    color: var(--footer-accent);
+}
+
+.fol_us {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.follow_us {
+    width: 100%;
+    margin: 0 0 5px;
+
+    color: var(--footer-accent);
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.fol_us img {
+    width: 28px;
+    height: 28px;
+    object-fit: contain;
+    cursor: pointer;
+
+    filter: brightness(0) invert(1);
+
+    transition:
+        transform 0.3s ease,
+        filter 0.3s ease;
+}
+
+.fol_us img:hover {
+    transform: translateY(-4px);
+    filter: brightness(0) saturate(100%)
+        invert(71%) sepia(39%) saturate(692%)
+        hue-rotate(328deg) brightness(101%);
+}
+
+.copyright {
+    max-width: 1260px;
+    margin: 0 auto;
+    padding: 18px 30px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+
+    border-top: 1px solid var(--footer-divider);
+}
+
+.copyright p {
+    margin: 0;
+    color: var(--footer-muted);
+    font-size: 13px;
+    line-height: 1.6;
+}
+
+.copyright p:last-child {
+    color: var(--footer-text);
+    font-weight: 600;
+}
