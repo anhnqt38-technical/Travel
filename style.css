@@ -1,0 +1,436 @@
+:root {
+    --footer-bg: #38636b;
+    --footer-text: #f3f7f5;
+    --footer-muted: #c5d6d2;
+    --footer-accent: #f4a261;
+    --footer-divider: rgba(243, 247, 245, 0.2);
+}
+/* body1 */
+ * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            color: #000101;
+            background: #f4f7f6;
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+        }
+
+        .page {
+            width: min(1120px, 92%);
+            margin: 0 auto;
+            padding: 40px 0 56px;
+        }
+
+        .hero {
+            display: grid;
+            grid-template-columns: 1.1fr 1fr;
+            align-items: center;
+            gap: 36px;
+            margin-bottom: 56px;
+            padding: 24px;
+            background: #fff;
+            border-radius: 18px;
+        }
+
+        .hero img {
+            display: block;
+            width: 100%;
+            aspect-ratio: 16 / 10;
+            object-fit: cover;
+            border-radius: 12px;
+        }
+
+        .hero h1 {
+            margin: 0 0 12px;
+            color: #167c72;
+            font-size: clamp(1.7rem, 4vw, 2.4rem);
+        }
+
+        .hero p,
+        .place-card p {
+            margin: 0;
+            color: #64716f;
+        }
+
+        .places h2 {
+            margin: 0 0 24px;
+            color: #167c72;
+            text-align: center;
+            font-size: clamp(1.6rem, 3vw, 2rem);
+        }
+
+        .place-grid {
+            display: grid;
+            grid-template-columns: repeat(4, minmax(0, 1fr));
+            gap: 20px;
+        }
+
+        .place-card {
+            overflow: hidden;
+            background: #fff;
+            border-radius: 14px;
+            box-shadow: 0 5px 18px rgb(35 74 69 / 7%);
+            transition: transform 180ms ease, box-shadow 180ms ease;
+        }
+
+        .place-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 10px 24px rgb(35 74 69 / 13%);
+        }
+
+        .place-card img {
+            display: block;
+            width: 100%;
+            aspect-ratio: 4 / 3;
+            object-fit: cover;
+        }
+
+        .place-card-content {
+            padding: 18px;
+        }
+
+        .place-card h3 {
+            margin: 0 0 8px;
+            color: #167c72;
+            font-size: 1.1rem;
+        }
+
+
+/* Footer */
+
+footer {
+    width: 100%;
+    background: var(--footer-bg);
+    color: var(--footer-text);
+    font-family: Arial, sans-serif;
+}
+
+.foo_container {
+    max-width: 1260px;
+    margin: 0 auto;
+    padding: 40px 30px 44px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 35px;
+}
+
+.img_logo {
+    flex: 1;
+}
+
+.img_logo img {
+    width: 160px;
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+    background: transparent;
+}
+
+.info {
+    flex: 1.5;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.contact {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.contact img {
+    width: 22px;
+    height: 22px;
+    object-fit: contain;
+    flex-shrink: 0;
+    filter: brightness(0) invert(1);
+}
+
+.contact p {
+    margin: 0;
+    color: var(--footer-text);
+    font-size: 14px;
+    line-height: 1.6;
+    overflow-wrap: anywhere;
+}
+
+.element {
+    flex: 0.7;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    padding-top: 4px;
+}
+
+.element a {
+    color: var(--footer-text);
+    text-decoration: none;
+    font-size: 15px;
+    transition: color 0.3s ease;
+}
+
+.element a:hover {
+    color: var(--footer-accent);
+}
+
+.fol_us {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.follow_us {
+    width: 100%;
+    margin: 0 0 5px;
+
+    color: var(--footer-accent);
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.fol_us img {
+    width: 28px;
+    height: 28px;
+    object-fit: contain;
+    cursor: pointer;
+
+    filter: brightness(0) invert(1);
+
+    transition:
+        transform 0.3s ease,
+        filter 0.3s ease;
+}
+
+.fol_us img:hover {
+    transform: translateY(-4px);
+    filter: brightness(0) saturate(100%)
+        invert(71%) sepia(39%) saturate(692%)
+        hue-rotate(328deg) brightness(101%);
+}
+
+.copyright {
+    max-width: 1260px;
+    margin: 0 auto;
+    padding: 18px 30px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+
+    border-top: 1px solid var(--footer-divider);
+}
+
+.copyright p {
+    margin: 0;
+    color: var(--footer-muted);
+    font-size: 13px;
+    line-height: 1.6;
+}
+
+.copyright p:last-child {
+    color: var(--footer-text);
+    font-weight: 600;
+}
+
+
+/* Tourist */
+
+section {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 60px 24px;
+    box-sizing: border-box;
+}
+
+section h2 {
+    text-align: center;
+    color: #d9a400;
+    font-size: 30px;
+    margin-bottom: 16px;
+}
+
+section p {
+    line-height: 1.7;
+}
+
+.tourist_guide {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 25px;
+    margin-bottom: 70px;
+}
+
+.info_tour {
+    padding: 22px;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease;
+}
+
+.info_tour:hover {
+    transform: translateY(-5px);
+}
+
+.info_tour img {
+    width: 100%;
+    height: 320px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.info_tour .name {
+    color: #bd8c00;
+    font-size: 21px;
+    margin: 18px 0 10px;
+}
+
+.about_guide {
+    color: #555;
+    font-size: 15px;
+    text-align: justify;
+    margin: 0;
+}
+
+.tourist_places {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 25px;
+    margin-bottom: 80px;
+}
+
+.info_place {
+    background-color: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.info_place:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 8px 22px rgba(0, 0, 0, 0.13);
+}
+
+.info_place img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    display: block;
+}
+
+.info_place .name {
+    color: #bd8c00;
+    font-size: 20px;
+    margin: 18px 18px 10px;
+}
+
+.about_place {
+    color: #555;
+    font-size: 14px;
+    text-align: justify;
+    margin: 0 18px 22px;
+}
+
+.itinerary_header {
+    text-align: center;
+    margin: 0 auto 45px;
+    max-width: 800px;
+}
+
+.itinerary_header h2 {
+    font-size: 30px;
+    color: #d9a400;
+    margin-bottom: 15px;
+}
+
+.itinerary_header p {
+    color: #666;
+    font-size: 16px;
+}
+
+.itinerary_container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.itinerary_day {
+    display: grid;
+    grid-template-columns: 70px minmax(0, 1fr);
+    gap: 22px;
+    margin-bottom: 35px;
+}
+
+.day_number {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: #e5ac00;
+    color: #fff;
+    font-size: 23px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 12px rgba(229, 172, 0, 0.3);
+}
+
+.day_content {
+    background: #fff;
+    padding: 25px;
+    border-radius: 12px;
+    border-left: 4px solid #e5ac00;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    transition: box-shadow 0.3s ease;
+}
+
+.day_content:hover {
+    box-shadow: 0 8px 22px rgba(0, 0, 0, 0.12);
+}
+
+.day_content h3 {
+    color: #bd8c00;
+    font-size: 21px;
+    margin: 0 0 12px;
+}
+
+.day_description {
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.schedule_item {
+    display: grid;
+    grid-template-columns: 75px minmax(0, 1fr);
+    gap: 15px;
+    padding: 18px 0;
+    border-top: 1px solid #eee;
+}
+
+.schedule_item .time {
+    color: #bd8c00;
+    font-weight: bold;
+}
+
+.schedule_item h4 {
+    color: #333;
+    font-size: 16px;
+    margin: 0 0 8px;
+}
+
+.schedule_item p {
+    color: #666;
+    font-size: 14px;
+    margin: 0;
+    text-align: justify;
+}
