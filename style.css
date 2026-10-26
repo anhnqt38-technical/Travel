@@ -15,16 +15,20 @@
 
 /* Header */
 
-.header {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
+body {
+    font-family: Arial, sans-serif;
+    background: url('your-background-image.jpg') no-repeat center center/cover;
+    min-height: 100vh;
+}
+
+header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 50px;
-    z-index: 1000;
+    padding: 15px 50px;
+    position: relative;
+    border-top: 5px solid #e58db8;
+    background: linear-gradient(to bottom, rgba(229, 169, 196, 0.9) 0%, rgba(248, 176, 216, 0.4) 100%);
 }
 
 .header-logo {
@@ -40,9 +44,9 @@
 
 .logo-text {
     color: #ffffff;
-    font-size: 20px;
     font-weight: bold;
-    font-family: Arial, sans-serif;
+    font-size: 20px;
+    display: none;
 }
 
 .header-menu {
@@ -53,14 +57,13 @@
 .menu-item {
     color: #ffffff;
     text-decoration: none;
-    font-size: 16px;
-    font-weight: 500;
-    font-family: Arial, sans-serif;
+    font-weight: 600;
+    font-size: 14px;
     transition: color 0.3s ease;
 }
 
 .menu-item:hover {
-    color: #00adb5;
+    color: #238E8D;
 }
 
 
@@ -251,7 +254,7 @@ section p {
 }
 
 .about_guide {
-    color: #555;
+    color: #85d5f0;
     font-size: 15px;
     text-align: justify;
     margin: 0;
@@ -268,7 +271,7 @@ section p {
     background-color: #fff;
     border-radius: 12px;
     overflow: hidden;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    box-shadow: 0 4px 15px rgba(3, 24, 23, 0.08);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
