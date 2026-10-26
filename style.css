@@ -6,6 +6,64 @@
     --footer-divider: rgba(243, 247, 245, 0.2);
 }
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* Header */
+
+.header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    z-index: 1000;
+}
+
+.header-logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo-img {
+    height: 40px;
+    object-fit: contain;
+}
+
+.logo-text {
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+}
+
+.header-menu {
+    display: flex;
+    gap: 30px;
+}
+
+.menu-item {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: Arial, sans-serif;
+    transition: color 0.3s ease;
+}
+
+.menu-item:hover {
+    color: #00adb5;
+}
+
+
 /* Footer */
 
 footer {
@@ -19,7 +77,6 @@ footer {
     max-width: 1260px;
     margin: 0 auto;
     padding: 40px 30px 44px;
-
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
@@ -97,7 +154,6 @@ footer {
 .follow_us {
     width: 100%;
     margin: 0 0 5px;
-
     color: var(--footer-accent);
     font-size: 18px;
     font-weight: bold;
@@ -108,31 +164,23 @@ footer {
     height: 28px;
     object-fit: contain;
     cursor: pointer;
-
     filter: brightness(0) invert(1);
-
-    transition:
-        transform 0.3s ease,
-        filter 0.3s ease;
+    transition: transform 0.3s ease, filter 0.3s ease;
 }
 
 .fol_us img:hover {
     transform: translateY(-4px);
-    filter: brightness(0) saturate(100%)
-        invert(71%) sepia(39%) saturate(692%)
-        hue-rotate(328deg) brightness(101%);
+    filter: brightness(0) saturate(100%) invert(71%) sepia(39%) saturate(692%) hue-rotate(328deg) brightness(101%);
 }
 
 .copyright {
     max-width: 1260px;
     margin: 0 auto;
     padding: 18px 30px;
-
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 15px;
-
     border-top: 1px solid var(--footer-divider);
 }
 
