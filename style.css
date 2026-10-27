@@ -5,6 +5,99 @@
     --footer-accent: #f4a261;
     --footer-divider: rgba(243, 247, 245, 0.2);
 }
+/* body1 */
+ * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            color: #000101;
+            background: #f4f7f6;
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+        }
+
+        .page {
+            width: min(1120px, 92%);
+            margin: 0 auto;
+            padding: 40px 0 56px;
+        }
+
+        .hero {
+            display: grid;
+            grid-template-columns: 1.1fr 1fr;
+            align-items: center;
+            gap: 36px;
+            margin-bottom: 56px;
+            padding: 24px;
+            background: #fff;
+            border-radius: 18px;
+        }
+
+        .hero img {
+            display: block;
+            width: 100%;
+            aspect-ratio: 16 / 10;
+            object-fit: cover;
+            border-radius: 12px;
+        }
+
+        .hero h1 {
+            margin: 0 0 12px;
+            color: #167c72;
+            font-size: clamp(1.7rem, 4vw, 2.4rem);
+        }
+
+        .hero p,
+        .place-card p {
+            margin: 0;
+            color: #64716f;
+        }
+
+        .places h2 {
+            margin: 0 0 24px;
+            color: #167c72;
+            text-align: center;
+            font-size: clamp(1.6rem, 3vw, 2rem);
+        }
+
+        .place-grid {
+            display: grid;
+            grid-template-columns: repeat(4, minmax(0, 1fr));
+            gap: 20px;
+        }
+
+        .place-card {
+            overflow: hidden;
+            background: #fff;
+            border-radius: 14px;
+            box-shadow: 0 5px 18px rgb(35 74 69 / 7%);
+            transition: transform 180ms ease, box-shadow 180ms ease;
+        }
+
+        .place-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 10px 24px rgb(35 74 69 / 13%);
+        }
+
+        .place-card img {
+            display: block;
+            width: 100%;
+            aspect-ratio: 4 / 3;
+            object-fit: cover;
+        }
+
+        .place-card-content {
+            padding: 18px;
+        }
+
+        .place-card h3 {
+            margin: 0 0 8px;
+            color: #167c72;
+            font-size: 1.1rem;
+        }
+
 
 /* Footer */
 
