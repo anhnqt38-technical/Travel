@@ -5,6 +5,60 @@
     --footer-accent: #f4a261;
     --footer-divider: rgba(243, 247, 245, 0.2);
 }
+
+/* Header */
+
+body {
+    font-family: Arial, sans-serif;
+    background: url('your-background-image.jpg') no-repeat center center/cover;
+    min-height: 100vh;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+    position: relative;
+    border-top: 5px solid #e58db8;
+    background: linear-gradient(to bottom, rgba(229, 169, 196, 0.9) 0%, rgba(248, 176, 216, 0.4) 100%);
+}
+
+.header-logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo-img {
+    height: 40px;
+    object-fit: contain;
+}
+
+.logo-text {
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 20px;
+    display: none;
+}
+
+.header-menu {
+    display: flex;
+    gap: 30px;
+}
+
+.menu-item {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 14px;
+    transition: color 0.3s ease;
+}
+
+.menu-item:hover {
+    color: #238E8D;
+}
+
 /* body1 */
  * {
             box-sizing: border-box;
@@ -335,60 +389,6 @@ align-items: center;
 }
 
 
-/* Header */
-
-body {
-    font-family: Arial, sans-serif;
-    background: url('your-background-image.jpg') no-repeat center center/cover;
-    min-height: 100vh;
-}
-
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px 50px;
-    position: relative;
-    border-top: 5px solid #e58db8;
-    background: linear-gradient(to bottom, rgba(229, 169, 196, 0.9) 0%, rgba(248, 176, 216, 0.4) 100%);
-}
-
-.header-logo {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
-
-.logo-img {
-    height: 40px;
-    object-fit: contain;
-}
-
-.logo-text {
-    color: #ffffff;
-    font-weight: bold;
-    font-size: 20px;
-    display: none;
-}
-
-.header-menu {
-    display: flex;
-    gap: 30px;
-}
-
-.menu-item {
-    color: #ffffff;
-    text-decoration: none;
-    font-weight: 600;
-    font-size: 14px;
-    transition: color 0.3s ease;
-}
-
-.menu-item:hover {
-    color: #238E8D;
-}
-
-
 /* Footer */
 
 footer {
@@ -715,11 +715,7 @@ section p {
     text-align: justify;
 }
 
-
-/* --- SỬA LẠI CSS TRANG HOMESTAY CHO GỌN GÀNG, SẠCH SẼ --- */
-
-
-/* Đảm bảo phần đầu (Hero) độc lập, không bị đè chữ */
+/* HomeStay */
 
 .hero-section {
     position: relative;
@@ -727,8 +723,6 @@ section p {
     overflow: hidden;
 }
 
-
-/* Khung nội dung trắng bên dưới banner, có khoảng cách rõ ràng */
 
 .homestay-intro {
     max-width: 1200px;
@@ -738,13 +732,9 @@ section p {
     align-items: center;
     gap: 50px;
     background: #fff;
-    /* Nền trắng sạch sẽ */
     position: relative;
     z-index: 10;
 }
-
-
-/* Lưới 5 ảnh nghệ thuật */
 
 .intro-images-grid {
     flex: 1.2;
@@ -825,8 +815,6 @@ section p {
 }
 
 
-/* Khối dịch vụ & phòng nghỉ bên dưới có nền trắng riêng biệt */
-
 .service-section {
     max-width: 1200px;
     margin: 80px auto;
@@ -856,7 +844,6 @@ section p {
     align-items: center;
     gap: 50px;
     background: #f9f9f9;
-    /* Màu nền nhẹ cho thẻ phòng */
     border-radius: 12px;
     overflow: hidden;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
