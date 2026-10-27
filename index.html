@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Da Nang Travel</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <header class="header">
         <div class="header-logo">
@@ -15,68 +17,90 @@
         <nav class=" header-menu ">
             <a href="# " class="menu-item active ">Home</a>
             <a href="Touris.html" class="menu-item active ">Touirs</a>
-            <a href="# " class="menu-item active ">Homestays</a>
-            <a href="# " class="menu-item active ">New</a>
+            <a href="Homestay.html" class="menu-item active ">Homestays</a>
+            <a href="news.html" class="menu-item active ">New</a>
             <a href="# " class="menu-item active ">About Us</a>
         </nav>
     </header>
-  <table width="100%">
-        <tr>
-        <td width="50%">
-            <img src="https://static.vinwonders.com/production/chua-linh-ung-du-lich-da-nang-1.jpg" alt="ảnh chùa linh ứng " width="100%">
-        </td>
-        <td with="50%" valign="top">
-            <h1>Chùa Linh Ứng</h1>
-            <p>Chùa Linh Ứng trên bán đảo Sơn Trà là một trong những công trình tâm linh nổi bật nhất tại Đà Nẵng. Nằm ở độ cao 693m so với mực nước biển, chùa được bao quanh bởi thiên nhiên hùng vĩ, với lưng tựa núi và mặt hướng biển Đông.</p>
-        </td>
-    </table>
+<main class="page">
+        <section class="hero" aria-labelledby="hero-title">
+            <img src="https://static.vinwonders.com/production/chua-linh-ung-du-lich-da-nang-1.jpg" alt="Chùa Linh Ứng trên bán đảo Sơn Trà">
+            <div>
+                <h1 id="hero-title">Chùa Linh Ứng</h1>
+                <p>Chùa Linh Ứng trên bán đảo Sơn Trà là một trong những công trình tâm linh nổi bật nhất tại Đà Nẵng. Nằm ở độ cao 693m so với mực nước biển, chùa được bao quanh bởi thiên nhiên hùng vĩ, với lưng tựa núi và mặt hướng biển Đông.</p>
+            </div>
+        </section>
 
-    <center>
-        <h1>Các điểm du lịch nổi tiếng </h1>
-    </center>
-     <table align="center" cellspacing="15">
-        <tr width =90%>
-            <td width="25%">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRawlSG7zfMF_BIqsUedK6eAZ2sInxfX09n37-58zdYA&s=10" alt="Đỉnh bàn cờ " width="100%">
-                <h3>Đỉnh Bàn Cờ</h3>
-                <p>Đỉnh Bàn Cờ là "nóc nhà" của Đà Nẵng, nằm ở độ cao khoảng 700 mét trên bán đảo Sơn Trà.</p>
-            </td>
-            
-            <td width="25%" valign="top">
-                <h3>Cầu rồng </h3>
-                <p>Cầu Rồng là biểu tượng kiến trúc nổi tiếng tại thành phố Đà Nẵng, bắc qua dòng sông Hàn tại khu vực đường Nguyễn Văn Linh, quận Hải Châu.</p>
-            </td>
-            <td width="25%" valign="top">
-                <h3>Bà naf hill</h3>
-                <p>Ba Na Hills là khu du lịch và nghỉ dưỡng nổi tiếng trên đỉnh Núi Chúa, xã Bà Nà, thành phố Đà Nẵng, cách trung tâm khoảng 25–30 km. Nơi đây nổi bật với khí hậu mát mẻ quanh năm, </p>
-            </td>
-            <td width="25%" valign="top">
-                <h3>Cầu sông hàn </h3>
-                <p>Cầu Sông Hàn là cây cầu quay đầu tiên và duy nhất tại Việt Nam, nối liền đường Lê Duẩn (quận Hải Châu, bờ Tây) và đường Phạm Văn Đồng (quận Sơn Trà, bờ Đông) của thành phố Đà Nẵng</p>
-            </td>
-        </tr>
+        <section class="places" aria-labelledby="places-title">
+            <h2 id="places-title">Các điểm du lịch nổi tiếng</h2>
+            <div class="place-grid">
+                <article class="place-card">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRawlSG7zfMF_BIqsUedK6eAZ2sInxfX09n37-58zdYA&s=10" alt="Khung cảnh Đỉnh Bàn Cờ">
+                    <div class="place-card-content">
+                        <h3>Đỉnh Bàn Cờ</h3>
+                        <p>Đỉnh Bàn Cờ là "nóc nhà" của Đà Nẵng, nằm ở độ cao khoảng 700 mét trên bán đảo Sơn Trà, cách trung tâm thành phố khoảng 9–15 km.</p>
+                    </div>
+                </article>
 
-        <tr>
+                <article class="place-card">
+                    <img src="https://cdn2.fptshop.com.vn/unsafe/1920x0/filters:format(webp):quality(75)/cau_rong_phun_lua_may_gio_thumb_21f6fc8dae.jpg" alt="Cầu Rồng bắc qua sông Hàn">
+                    <div class="place-card-content">
+                        <h3>Cầu Rồng</h3>
+                        <p>Cầu Rồng là biểu tượng kiến trúc nổi tiếng tại thành phố Đà Nẵng, bắc qua dòng sông Hàn tại khu vực đường Nguyễn Văn Linh, quận Hải Châu.</p>
+                    </div>
+                </article>
 
-            <td width=25% valign="top">
-                <h3>Cầu Rồng </h3>
-                <p>Cầu Rồng là cây cầu biểu tượng bắc qua sông Hàn tại Đà Nẵng. Cầu dài 666,5m, rộng 37,5m với 6 làn xe. Điểm đặc biệt nhất của cầu là thiết kế mô phỏng con rồng thời Lý có khả năng phun lửa và phun nước </p>
-            </td>
-            <td width=25% valign="top">
-                <h3>Non nước</h3>
-                <p>Khu du lịch Non Nước (thuộc quận Ngũ Hành Sơn, Đà Nẵng) nổi tiếng với cụm danh thắng Ngũ Hành Sơn, bãi biển cát trắng dài 5 km và Làng đá mỹ nghệ Non Nước truyền thống</p>
-            </td>
-            <td width=25% valign="top">
-                <h3>Biển Mỹ Khê</h3>
-                <p>Bãi biển Mỹ Khê nằm trên đường Võ Nguyên Giáp, phường Phước Mỹ, quận Sơn Trà, Đà Nẵng, cách trung tâm thành phố khoảng 3 km. Nơi đây nổi tiếng với dải cát trắng mịn dài</p>
-            </td>
-            <td width=25% valign="top">
-                <h3>Bán đảo sơn trà</h3>
-                <p>Bán đảo Sơn Trà thuộc phường Thọ Quang, quận Sơn Trà, cách trung tâm thành phố Đà Nẵng khoảng 10 km về phía Đông Bắc</p>
-            </td>
-        </tr>
-     </table>
-        <!--BODY 2-->
+                <article class="place-card">
+                    <img src="https://images2.thanhnien.vn/528068263637045248/2023/12/29/h4-17038472022691152254010.jpg" alt="Bà nà hill">
+                    <div class="place-card-content">
+                        <h3>Bà Nà Hills</h3>
+                        <p>Ba Na Hills là khu du lịch và nghỉ dưỡng nổi tiếng trên đỉnh Núi Chúa, cách trung tâm khoảng 25–30 km. Nơi đây nổi bật với khí hậu mát mẻ quanh năm.</p>
+                    </div>
+                </article>
+
+                <article class="place-card">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQ0NVdpoI5p1i9oiQreSDsNLxZqKkLQdZzYW7PESa5Qk-G1lgNZ2N_ICFw&s=10" alt="Cầu sông Hàn">
+                    <div class="place-card-content">
+                        <h3>Cầu Sông Hàn</h3>
+                      <p>Cầu Sông Hàn là cây cầu quay đầu tiên và duy nhất tại Việt Nam, nối liền đường Lê Duẩn ở bờ Tây và đường Phạm Văn Đồng ở bờ Đông thành phố.</p>
+                    </div>
+                </article>
+
+                <article class="place-card">
+                    <div class="place-card-content">
+                        <img src="https://fvgtravel.com.vn/uploads/up/root/editor/2025/08/05/19/27/w1230/khu1754375233_7873.png" alt="Non nước">
+                        <h3>Non Nước</h3>
+                        <p>Khu du lịch Non Nước nổi tiếng với cụm danh thắng Ngũ Hành Sơn, bãi biển cát trắng dài 5 km và làng đá mỹ nghệ Non Nước truyền thống.</p>
+                    </div>
+                </article>
+
+                <article class="place-card">
+                    <div class="place-card-content">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSISELi0OOPnCOtTgv1bGs2XtgpBnoG0dgeTC3OUtsLoA&s=10" alt="Biển mỹ khê">
+                        <h3>Biển Mỹ Khê</h3>
+                        <p>Bãi biển Mỹ Khê nằm trên đường Võ Nguyên Giáp, cách trung tâm thành phố khoảng 3 km. Nơi đây nổi tiếng với dải cát trắng mịn dài.</p>
+                    </div>
+                </article>
+
+                <article class="place-card">
+                    <div class="place-card-content">
+                        <img src="https://dacsanlamqua.com/wp-content/uploads/2017/10/Ban-dao-son-tra.jpg" alt="Bán đảo sơn trà">
+                        <h3>Bán đảo Sơn Trà</h3>
+                        <p>Bán đảo Sơn Trà thuộc quận Sơn Trà, cách trung tâm thành phố Đà Nẵng khoảng 10 km về phía Đông Bắc.</p>
+                    </div>
+                </article>
+                <article class="place-card">
+                    <div class="place-card-content"> 
+                        <img src="https://dacsanlamqua.com/wp-content/uploads/2017/10/Ban-dao-son-tra.jpg" alt="">
+                        <h3>Phố Cổ Hội An</h3>
+                        <p>Phố cổ Hội An là một đô thị cổ nằm ở hạ lưu sông Thu Bồn, thuộc tỉnh Quảng Nam, cách thành phố Đà Nẵng khoảng 30 km về phía Nam</p>
+                    </div>
+
+                </article>
+            </div>
+        </section>
+    </main>
+  <!--BODY 2-->
         <div class="container">
         <section class="rooms-section">
             <div class="section-header">
@@ -86,22 +110,25 @@
                 </h1>
             </div>
 
+
             <div class="rooms-grid">
                 <div class="room-card">
                     <div class="room-image">
-                        <img src="https://img.cnt.traveloka.com/tvlk/blog/2023/10/cau-vang-da-nang-13.jpg"
+                        <img src="https://media.vietravel.com/images/Content/dia-diem-du-lich-da-nang-4245.jpg"
                              alt="Cầu Vàng">
                     </div>
                     <div class="room-badge">Cầu Vàng</div>
                 </div>
 
+
                 <div class="room-card">
                     <div class="room-image">
-                        <img src="https://cdn.vntrip.vn/cam-nang/wp-content/uploads/2017/07/c-r-e1505464506291.jpg"
+                        <img src="https://media.vietravel.com/images/Content/dia-diem-du-lich-da-nang-4245.jpg"
                              alt="Cầu Rồng">
                     </div>
                     <div class="room-badge">Cầu Rồng</div>
                 </div>
+
 
                 <div class="room-card">
                     <div class="room-image">
@@ -111,6 +138,7 @@
                     <div class="room-badge">Bà Nà Hills</div>
                 </div>
 
+
                 <div class="room-card">
                     <div class="room-image">
                         <img src="https://bqn.1cdn.vn/2022/04/04/images.baoquangnam.vn-storage-newsportal-2022-4-4-125513-_b1.jpg"
@@ -119,13 +147,15 @@
                     <div class="room-badge">Phố Cổ Hội An</div>
                 </div>
 
+
                 <div class="room-card">
                     <div class="room-image">
-                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSszWvFxjF-gd7N6aCY8xHn67aIyEyITakTiWwlbDsunaiZ6o5oEofZrG0&s=10"
+                        <img src="https://d2e5ushqwiltxm.cloudfront.net/wp-content/uploads/sites/86/2020/02/18085024/dragon-bridge-and-firework-ph%C3%A1o-hoa-tr%C3%AAn-c%E1%BA%A7u-r%E1%BB%93ng-Danang-Discovery-4-famous-bridge-in-danang-Restaurant-near-me-dragon-bridge-history-a-new-iconic-image-of-danang.jpg"
                              alt="Cầu Sông Hàn">
                     </div>
                     <div class="room-badge">Cầu Sông Hàn</div>
                 </div>
+
 
                 <div class="room-card">
                     <div class="room-image">
@@ -144,6 +174,7 @@
                 </h1>
             </div>
 
+
             <div class="pricing-list">
                 <div class="pricing-item">
                     <div class="item-left">
@@ -152,6 +183,7 @@
                                  alt="Cho thuê xe máy">
                         </div>
 
+
                         <div class="item-price-box">
                             <div class="price-val">
                                 150k <small>/ Ngày</small>
@@ -159,6 +191,7 @@
                             <h2 class="service-name">Cho Thuê Xe Máy</h2>
                         </div>
                     </div>
+
 
                     <div class="item-right">
                         <div class="watermark">Ride</div>
@@ -177,6 +210,7 @@
                                  alt="Hướng dẫn du lịch">
                         </div>
 
+
                         <div class="item-price-box">
                             <div class="price-val">
                                 150k <small>/ Giờ</small>
@@ -185,15 +219,16 @@
                         </div>
                     </div>
 
+
                     <div class="item-right">
                         <div class="watermark">Guide</div>
                         <ul class="service-details">
-                      </ul>
-                                         <li>Giới thiệu các địa điểm du lịch nổi tiếng</li>
+                            <li>Giới thiệu các địa điểm du lịch nổi tiếng</li>
                             <li>Khám phá văn hóa, lịch sử và ẩm thực</li>
                             <li>Lên lịch trình phù hợp với du khách</li>
                             <li>Đồng hành trong chuyến đi an toàn</li>
-         </div>
+                        </ul>
+                    </div>
                 </div>
                 <div class="pricing-item">
                     <div class="item-left">
@@ -202,6 +237,7 @@
                                  alt="Dịch vụ mua sắm">
                         </div>
 
+
                         <div class="item-price-box">
                             <div class="price-val">
                                 100k <small>/ Lượt</small>
@@ -209,6 +245,7 @@
                             <h2 class="service-name">Dịch Vụ Mua Sắm</h2>
                         </div>
                     </div>
+
 
                     <div class="item-right">
                         <div class="watermark">Shop</div>
@@ -221,10 +258,13 @@
                     </div>
                 </div>
 
+
             </div>
         </section>
 
+
     </div>
+
 
     <footer>
         <div class="foo_container">
@@ -271,4 +311,5 @@
 
     </footer>
 </body>
+
 </html>
