@@ -392,3 +392,177 @@ section p {
     margin: 0;
     text-align: justify;
 }
+
+
+/* --- SỬA LẠI CSS TRANG HOMESTAY CHO GỌN GÀNG, SẠCH SẼ --- */
+
+
+/* Đảm bảo phần đầu (Hero) độc lập, không bị đè chữ */
+
+.hero-section {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+
+/* Khung nội dung trắng bên dưới banner, có khoảng cách rõ ràng */
+
+.homestay-intro {
+    max-width: 1200px;
+    margin: 80px auto;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    background: #fff;
+    /* Nền trắng sạch sẽ */
+    position: relative;
+    z-index: 10;
+}
+
+
+/* Lưới 5 ảnh nghệ thuật */
+
+.intro-images-grid {
+    flex: 1.2;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 160px);
+    gap: 12px;
+}
+
+.intro-images-grid img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.img-1 {
+    grid-column: span 1;
+    grid-row: span 2;
+    height: 100% !important;
+}
+
+.img-2 {
+    grid-column: span 2;
+    grid-row: span 1;
+}
+
+.img-3 {
+    grid-column: span 1;
+    grid-row: span 1;
+}
+
+.img-4 {
+    grid-column: span 1;
+    grid-row: span 1;
+}
+
+.intro-content {
+    flex: 1;
+    text-align: left;
+}
+
+.intro-content span {
+    font-style: italic;
+    color: #888;
+    font-size: 18px;
+}
+
+.intro-content h2 {
+    font-size: 32px;
+    color: #d4af37;
+    margin: 10px 0 20px 0;
+}
+
+.intro-content p {
+    color: #666;
+    line-height: 1.6;
+    font-size: 15px;
+    margin-bottom: 25px;
+}
+
+.btn-custom {
+    background-color: #e5b84d;
+    color: white;
+    padding: 10px 25px;
+    border: none;
+    border-radius: 4px;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    transition: background 0.3s;
+}
+
+.btn-custom:hover {
+    background-color: #c99f34;
+}
+
+
+/* Khối dịch vụ & phòng nghỉ bên dưới có nền trắng riêng biệt */
+
+.service-section {
+    max-width: 1200px;
+    margin: 80px auto;
+    padding: 40px 20px;
+    background: #fff;
+    text-align: center;
+    position: relative;
+    z-index: 10;
+    border-radius: 12px;
+}
+
+.service-section h2 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.service-section>p {
+    max-width: 700px;
+    margin: 0 auto 50px auto;
+    color: #666;
+    line-height: 1.6;
+}
+
+.room-card {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    background: #f9f9f9;
+    /* Màu nền nhẹ cho thẻ phòng */
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+    margin-bottom: 40px;
+    text-align: left;
+    border: 1px solid #eee;
+}
+
+.room-card img {
+    width: 50%;
+    height: 350px;
+    object-fit: cover;
+}
+
+.room-info {
+    flex: 1;
+    padding: 30px;
+}
+
+.room-info h3 {
+    font-size: 26px;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.room-info p {
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 25px;
+    font-size: 15px;
+}
