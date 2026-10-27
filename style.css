@@ -435,3 +435,117 @@ section p {
     margin: 0;
     text-align: justify;
 }
+
+/* news */
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            color: #243746;
+            background: #fff;
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            width: min(1000px, 92%);
+            margin: 0 auto;
+            padding: 24px 0 48px;
+        }
+
+        .search {
+            display: flex;
+            max-width: 700px;
+            margin: 0 auto 32px;
+            padding: 6px;
+            border: 1px solid #dce5e8;
+            border-radius: 30px;
+            box-shadow: 0 3px 12px #19354a12;
+        }
+
+        .search input {
+            flex: 1;
+            min-width: 0;
+            padding: 12px 16px;
+            border: 0;
+            outline: 0;
+            font-size: 15px;
+        }
+
+        .search button {
+            padding: 0 24px;
+            color: white;
+            background: #168c78;
+            border: 0;
+            border-radius: 24px;
+            cursor: pointer;
+        }
+
+        .section {
+            margin-bottom: 36px;
+        }
+
+        .section-title {
+            margin-bottom: 16px;
+        }
+
+        .section-title h1,
+        .section-title h2 {
+            margin: 0 0 5px;
+            color: #205575;
+            font-size: 24px;
+        }
+
+        .section-title p {
+            margin: 0;
+            color: #718391;
+            font-size: 14px;
+        }
+
+        .story {
+            display: flex;
+            align-items: center;
+            gap: 18px;
+            margin-bottom: 12px;
+            padding: 10px;
+            border: 1px solid #edf1f2;
+            border-radius: 12px;
+        }
+
+        .story img {
+            width: 230px;
+            height: 125px;
+            flex-shrink: 0;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        .tag {
+            display: inline-block;
+            margin-bottom: 6px;
+            padding: 4px 10px;
+            color: #16715f;
+            background: #e6f5ef;
+            border-radius: 20px;
+            font-size: 12px;
+        }
+
+        .story h3 {
+            margin: 0 0 6px;
+            color: #234d68;
+            font-size: 17px;
+        }
+
+        .story p {
+            margin: 0 0 8px;
+            color: #718391;
+            font-size: 14px;
+            line-height: 1.5;
+        }
+
+        .details {
+            color: #82939e;
+            font-size: 12px;
+        }
